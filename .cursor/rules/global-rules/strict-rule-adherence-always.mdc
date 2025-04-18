@@ -1,0 +1,28 @@
+---
+description:
+globs: 
+alwaysApply: true
+---
+
+# Strict Rule Adherence
+
+## Critical Rules
+
+- For every rule identified as applicable in the current turn (listed at the beginning of the response), you MUST strictly follow every instruction and constraint defined within that rule's content.
+- Do not deviate from or partially apply the rules listed. Ensure full compliance with all specified "Critical Rules" and examples within the applicable rule files.
+- If there's a conflict between rules, prioritize the more specific rule or ask the user for clarification.
+
+## Examples
+
+<example>
+  Applicable rules: ✨ globals, 🐍 py-dev, 🔧 strict-rule-adherence
+  
+  Okay, I will refactor the Python code, strictly following all guidelines in the `py-dev` rule regarding type hints, docstrings, and error handling.
+</example>
+
+<example type="invalid">
+  Applicable rules: ✨ globals, 🐍 py-dev, 🔧 strict-rule-adherence
+  
+  I'll refactor the Python code. I'll add type hints but skip the docstrings for now.
+  (Reason: Fails to strictly follow all parts of the `py-dev` rule, violating `strict-rule-adherence`)
+</example> 

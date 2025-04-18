@@ -1,0 +1,41 @@
+---
+description:
+globs: 
+alwaysApply: true
+---
+
+# Display Applicable Rules
+
+## Critical Rules
+
+- At the beginning of each response, list the Cursor rules applicable to the current query context.
+- Use the format: "Applicable rules:" followed by a list of `emoji + short rule name`.
+- Use concise, relevant emojis for each rule category (e.g., 🐍 for Python, 💾 for Git, 🔧 for Core).
+- If only global rules (like this one) apply, state "Applicable rules: ✨ globals".
+- If other specific rules apply, list them alongside the global indicator if appropriate, e.g., "Applicable rules: ✨ globals, 🐍 py-dev".
+
+## Examples
+
+<example>
+  Applicable rules: ✨ globals, 🐍 py-dev, 💾 git-commit
+  
+  Okay, let's refactor this Python code and then commit the changes...
+</example>
+
+<example>
+  Applicable rules: ✨ globals
+  
+  Hello! How can I help you today?
+</example>
+
+<example type="invalid">
+  Rules: python-development-guidelines-agent, git-commit-push-agent
+  
+  Let's fix this bug. 
+  (Reason: Incorrect format, missing emojis, not listing globals)
+</example>
+
+<example type="invalid">
+  Let's start by reviewing the rules... python, git... okay, let's get started.
+  (Reason: Rules not listed at the beginning in the specified format)
+</example> 
