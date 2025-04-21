@@ -1,5 +1,11 @@
 # BMad's Best Practices Cursor Custom Agents and Rules Generator
 
+April 19, 2025
+
+The updates to cursor with 0.49 have made big improvements to rules finally! Some much needed bug fixes.
+
+New [video](https://youtu.be/1wQUio9TiIQ?si=3KT5NiO5mDL8GR5P) and [repo](https://github.com/bmadcode/BMAD-METHOD) is up showing how to use the custom agents in conjunction with rules. This is more cursor agnostic if you want to try using other tools in conjunction with Cursor.
+
 April 16, 2025
 
 You can now generate rules directly in a conversation using the `/Generate Cursor Rules` command. This makes it easy to define how the agent should behave without leaving the chat.
@@ -53,7 +59,21 @@ This template dramatically improves AI workflows in Agent and Custom mode by pro
 
 ## Quick Start Options
 
-### A) New Project Setup
+### A) npm cli
+
+#### 🛠 Requirements
+
+- Node.js >= 22.14.0
+
+#### 📥 Installation & Usage
+
+```bash
+npx cursor-rules-deploy /path/to/your/project
+```
+
+For more usage examples, refer to [cursor-rules-deploy](https://github.com/rosendolu/cursor-rules-deploy#readme)
+
+### B) New Project Setup
 
 Start a new project with the Agile Workflow and Rules Generator:
 
@@ -71,7 +91,7 @@ cd cursor-auto-rules-agile-workflow
 
 The script creates your project folder (if needed) with all rules, documentation, and configuration files to start with the agile workflow.
 
-### B) Add to Existing Project
+### C) Add to Existing Project
 
 Enhance your current project with the rules generator:
 
